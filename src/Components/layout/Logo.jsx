@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router'
 
-const Logo = () => {
+const Logo = ({toggleMenu}) => {
   return (
-    <Link to="/">
+    <Link to="/" onClick={toggleMenu}>
     <h1 className="text-2xl leading-[36px] font-medium">
       <span className="text-primary-100">Stay</span>cation.
     </h1>
