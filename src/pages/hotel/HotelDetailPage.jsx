@@ -1,6 +1,10 @@
 import React from 'react'
+import { useParams } from 'react-router';
+import { data } from '../../constant/data';
 
 const HotelDetailPage = () => {
+    const { id } = useParams();
+  const hotel = data.find((hotel) => hotel.id === id); 
   return (
    <section>
        <section className="wrapper py-5 px-4 md:px-0">
@@ -12,38 +16,57 @@ const HotelDetailPage = () => {
     </div>
     <div>
       <h1 className="text-[28px] md:text-[42px] leading-[42px] md:leading-[63px] font-semibold text-primary">
-        Montigo Resort
+        {hotel.name}
       </h1>
       <p className="text-lg leading-[28px] font-light text-secondary">
-        Rio De Janeiro, Brazil
+       {hotel.location}
       </p>
     </div>
   </div>
 </section>
 
-<section className="wrapper pt-10 px-4 md:px-0">
+{/* <section className="wrapper pt-10 px-4 md:px-0">
   <div className="flex flex-col lg:flex-row gap-4">
     <div className="w-full max-w-full lg:max-w-[658px]">
-      <img src="./public/asset/Montigo-resort.svg" alt="Montigo-resort" className="w-full h-auto object-cover" />
+      <img src={hotel.images[0]} alt={hotel.name} className="w-full h-auto object-cover" />
     </div>
     <div className="flex flex-col space-y-4">
       <div>
-        <img src="./public/asset/Montigoresort-interior.svg" alt="" className="w-full h-auto object-cover" />
+        <img src={hotel.images} alt={hotel.name}  className="w-full h-auto object-cover" />
       </div>
       <div>
-        <img src="./public/asset/Montigoresort-interior.svg" alt="" className="w-full h-auto object-cover" />
+        <img src={hotel.images} alt={hotel.name}  className="w-full h-auto object-cover" />
       </div>
     </div>
   </div>
+</section> */}
+
+<section className="wrapper pt-10 px-4 md:px-0">
+  <div className="flex flex-col lg:flex-row gap-4">
+    <div className="w-full max-w-full lg:max-w-[658px]">
+      {/* Main Image */}
+      <img src={hotel.images[0]} alt={hotel.name} className="w-full h-auto object-cover" />
+    </div>
+    <div className="flex flex-col space-y-4">
+      {/* Map through the images  */}
+      {hotel.images.slice(1, 3).map((img, index) => (
+        <div key={index}>
+          <img src={img} alt={`${hotel.name} ${index + 1}`} className="w-full object-cover" />
+        </div>
+      ))}
+    </div>
+  </div>
 </section>
+
+
+
 
 <section className="wrapper px-4 md:px-0">
   <h4 className="text-lg md:text-2xl font-medium text-primary">Decsription</h4>
   <div className="flex flex-col lg:flex-row gap-4 pt-4">
     <div className="w-full max-w-full lg:max-w-[658px] pr-0 lg:pr-8">
       <p className="text-base leading-[27.2px] font-light text-secondary max-w-full lg:max-w-[600px]">
-        Lorem ipsum dolor for your design, website, and copywriting works. Use our tool to generate chunks of text that
-        is free from repetition and copyright claims. ...
+       {hotel.description}
       </p>
       <div className="py-6 w-full max-w-full lg:max-w-[658px] flex flex-col gap-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

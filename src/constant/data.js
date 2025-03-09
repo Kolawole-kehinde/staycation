@@ -6,8 +6,8 @@ export const data = [
     mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807829/Tabby_Town_wiobfz.png",
     images: [
       "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807829/Tabby_Town_wiobfz.png",
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807834/Anggana_nehttt.png",
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807830/Seattle_Rain_al4njs.png"
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807829/Tabby_Town_wiobfz.png",
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807829/Tabby_Town_wiobfz.png",
     ],
     description: "A cozy retreat surrounded by lush greenery, perfect for a quiet getaway.",
     pricePerNight: 280,
