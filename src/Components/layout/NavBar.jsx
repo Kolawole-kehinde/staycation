@@ -1,18 +1,16 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router";
 import { IoMdMenu } from "react-icons/io";
-import { navRoutes } from "../../constant/NavRoutes";
 import { IoMdClose } from "react-icons/io";
 import Logo from "./Logo";
+import Menu from "./Menu";
+import { NavLink } from "react-router";
+import { navRoutes } from "../../constant/NavRoutes";
 
 const NavBar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const toggleMenu = () => {
     setOpenMenu((prev) => !prev)
   }
-  const active = (isActive) => {
-    return isActive ? "text-orange-500" : "text-blue-500";
-  };
   return (
   
     <header className="py-6 px-4 lg:px-0 border-b border-bg-secondary-100">
@@ -26,8 +24,7 @@ const NavBar = () => {
                 <li key={id}>
                 <NavLink 
                 to={path}
-                className={({ isActive }) => active(isActive)}
-                >
+              >
                   {name}
                 </NavLink>
 
@@ -52,21 +49,7 @@ const NavBar = () => {
             </button>
             </div>
 
-            <menu className="flex flex-col space-y-5 pt-8">
-            {
-              navRoutes.map(({id, name, path}) => (
-                <li key={id}>
-                <NavLink 
-                to={path}
-                className={({ isActive }) => active(isActive)}
-                >
-                  {name}
-                </NavLink>
-
-                </li>
-              ))
-            }
-          </menu>
+            <Menu />
 
           </nav>
         )
