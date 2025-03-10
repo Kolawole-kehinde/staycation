@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { facilities } from "../constant/features";
+import { useNavigate } from "react-router";
+
 
 const AboutHotel = ({ hotel }) => {
+    let navigate = useNavigate();
   const [nights, setNights] = useState(2);
   const pricePerNight = 280;
   const totalPrice = nights * pricePerNight;
@@ -83,7 +86,7 @@ const AboutHotel = ({ hotel }) => {
           </div>
 
           {/* Booking Button */}
-          <button className="btn !rounded-none w-full" onClick={() => alert("Booking Confirmed!")}>
+          <button className="btn !rounded-none w-full"  onClick={() => navigate("/booking", { state: { nights } })}>
             Continue Booking
           </button>
         </div>
