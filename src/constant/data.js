@@ -9,7 +9,7 @@ export const data = [
       "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807829/Tabby_Town_wiobfz.png",
       "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807829/Tabby_Town_wiobfz.png",
     ],
-    description: "A cozy retreat surrounded by lush greenery, perfect for a quiet getaway.",
+    description: "Lorem ipsum dolor for your design, website, and copywriting works. Use our tool to generate chunks of text that is free from repetition and copyright claims. Take Action. 3D Images Increase Sales. Learn More. Sell More Onlie Today. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br><br>  Design is a plan or specifiaction for the construction of an object or system or for the implementation of an activity or process, or the result of that plan or specification in the form of a prototype, product or process. The national agency for design: enabling Singapore to use design for economic growth and to make lives better.",
     pricePerNight: 280,
     duration: 2,
     features: {
@@ -286,5 +286,101 @@ export const data = [
       refrigerators: 1,
       television: 3
     }
-  }
+  },
+  {
+    id: "G7H8I94",
+    name: "Seattle Rain",
+    location: "Jakarta, Indonesia",
+    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807830/Seattle_Rain_al4njs.png",
+    images: [
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807830/Seattle_Rain_al4njs.png",
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807832/Wooden_Pit_ezih1l.png",
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1741447715/green_park_qf3lvh.png"
+    ],
+    description: "Luxury penthouse with cityscape views and high-end amenities.",
+    pricePerNight: 350,
+    duration: 2,
+    features: {
+      bedrooms: 5,
+      bathrooms: 4,
+      livingRoom: 1,
+      diningRoom: 1,
+      internetSpeed: "25 mbps",
+      unitsReady: 3,
+      refrigerators: 2,
+      television: 6
+    }
+  },
+  {
+    id: "G7H8I92",
+    name: "Seattle Rain",
+    location: "Jakarta, Indonesia",
+    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807830/Seattle_Rain_al4njs.png",
+    images: [
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807830/Seattle_Rain_al4njs.png",
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807832/Wooden_Pit_ezih1l.png",
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1741447715/green_park_qf3lvh.png"
+    ],
+    description: "Luxury penthouse with cityscape views and high-end amenities.",
+    pricePerNight: 350,
+    duration: 2,
+    features: {
+      bedrooms: 5,
+      bathrooms: 4,
+      livingRoom: 1,
+      diningRoom: 1,
+      internetSpeed: "25 mbps",
+      unitsReady: 3,
+      refrigerators: 2,
+      television: 6
+    }
+  },
+  {
+    id: "G7H8I99",
+    name: "Seattle Rain",
+    location: "Jakarta, Indonesia",
+    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807830/Seattle_Rain_al4njs.png",
+    images: [
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807830/Seattle_Rain_al4njs.png",
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807832/Wooden_Pit_ezih1l.png",
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1741447715/green_park_qf3lvh.png"
+    ],
+    description: "Luxury penthouse with cityscape views and high-end amenities.",
+    pricePerNight: 350,
+    duration: 2,
+    features: {
+      bedrooms: 5,
+      bathrooms: 4,
+      livingRoom: 1,
+      diningRoom: 1,
+      internetSpeed: "25 mbps",
+      unitsReady: 3,
+      refrigerators: 2,
+      television: 6
+    }
+  },
+  {
+    id: "G7H8I98",
+    name: "Seattle Rain",
+    location: "Jakarta, Indonesia",
+    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807830/Seattle_Rain_al4njs.png",
+    images: [
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807830/Seattle_Rain_al4njs.png",
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807832/Wooden_Pit_ezih1l.png",
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1741447715/green_park_qf3lvh.png"
+    ],
+    description: "Luxury penthouse with cityscape views and high-end amenities.",
+    pricePerNight: 350,
+    duration: 2,
+    features: {
+      bedrooms: 5,
+      bathrooms: 4,
+      livingRoom: 1,
+      diningRoom: 1,
+      internetSpeed: "25 mbps",
+      unitsReady: 3,
+      refrigerators: 2,
+      television: 6
+    }
+  },
 ];
