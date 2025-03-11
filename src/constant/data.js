@@ -21,7 +21,8 @@ export const data = [
       unitsReady: 2,
       refrigerators: 2,
       television: 4
-    }
+    },
+    offer: true,
   },
   {
     id: "D4E5F6",
@@ -45,7 +46,8 @@ export const data = [
       unitsReady: 3,
       refrigerators: 1,
       television: 5
-    }
+    },
+    offer: false,
   },
   {
     id: "G7H8I9",
@@ -69,7 +71,8 @@ export const data = [
       unitsReady: 3,
       refrigerators: 2,
       television: 6
-    }
+    },
+    offer: false,
   },
   {
     id: "J1K2L3",
@@ -93,7 +96,8 @@ export const data = [
       unitsReady: 1,
       refrigerators: 1,
       television: 3
-    }
+    },
+    offer: false,
   },
   {
     id: "M4N5O6",
@@ -117,7 +121,8 @@ export const data = [
       unitsReady: 2,
       refrigerators: 2,
       television: 4
-    }
+    },
+    offer: false,
   },
   {
     id: "P7Q8R9",
@@ -141,7 +146,8 @@ export const data = [
       unitsReady: 2,
       refrigerators: 1,
       television: 3
-    }
+    },
+    offer: false,
   },
   {
     id: "S1T2U3",
@@ -165,7 +171,8 @@ export const data = [
       unitsReady: 2,
       refrigerators: 2,
       television: 4
-    }
+    },
+    offer: false,
   },
   {
     id: "V4W5X6",
@@ -190,7 +197,8 @@ export const data = [
       unitsReady: 3,
       refrigerators: 2,
       television: 5
-    }
+    },
+    offer: true,
   },
   {
     id: "Y7Z8A9",
@@ -214,7 +222,8 @@ export const data = [
       unitsReady: 2,
       refrigerators: 2,
       television: 4
-    }
+    },
+    offer: false,
   },
   {
     id: "B1C2D3",
@@ -238,7 +247,8 @@ export const data = [
       unitsReady: 1,
       refrigerators: 1,
       television: 3
-    }
+    },
+    offer: false,
   },
   {
     id: "E4F5G6",
@@ -262,7 +272,8 @@ export const data = [
       unitsReady: 2,
       refrigerators: 1,
       television: 3
-    }
+    },
+    offer: true,
   },
   {
     id: "H7I8J9",
@@ -286,30 +297,35 @@ export const data = [
       unitsReady: 2,
       refrigerators: 1,
       television: 3
-    }
+    },
+    offer: false,
   },
   {
     id: "K1L2M3",
     name: "Green Park",
     location: "Bandung, Indonesia",
     mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1741692147/tobby_xiewac.png",
+    offer: false,
   },
   {
     id: "N4O5P6",
     name: "Green Park",
     location: "Bandung, Indonesia",
     mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1741692146/dog_xogxfv.png",
+    offer: false,
   },
   {
     id: "Q7R8S9",
     name: "Green Park",
     location: "Bandung, Indonesia",
     mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1741692146/labour_mtoav2.png",
+    offer: false,
   },
   {
     id: "T1U2V3",
     name: "Green Park",
     location: "Bandung, Indonesia",
     mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1741692146/snorkelling_t7kjqp.png",
+    offer: false,
   },
 ];
