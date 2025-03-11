@@ -1,15 +1,19 @@
 import React from "react";
 import { useLocation } from "react-router";
 
+
+
 const HotelBookingPage = () => {
   const location = useLocation();
-  const hotelData = location.state || {}; // Get data passed via state
+  const nightsSelected = location.state?.nights || 1;
+  const pricePerNight = 240;
+  const totalPrice = nightsSelected * pricePerNight;
 
   return (
     <>
       <section className="wrapper p-6">
         <div className="flex items-center justify-center">
-          {/* Step 1 */}
+          {/* Step Indicator */}
           <div className="flex flex-col items-center">
             <div className="w-10 h-10 rounded-full border border-black flex items-center justify-center bg-gray-300">
               <div className="w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-400 font-bold">
@@ -17,17 +21,13 @@ const HotelBookingPage = () => {
               </div>
             </div>
           </div>
-
           <div className="w-16 h-1 bg-gray-300"></div>
-
           <div className="flex flex-col items-center">
             <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-gray-400 font-bold">
               2
             </div>
           </div>
-
           <div className="w-16 h-1 bg-gray-300"></div>
-
           <div className="flex flex-col items-center">
             <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-gray-400 font-bold">
               3
@@ -47,25 +47,24 @@ const HotelBookingPage = () => {
 
       <section className="wrapper py-4 px-4 md:px-8">
         <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-32">
+          {/* Hotel Details */}
           <div className="flex flex-col items-center md:items-start">
             <img
-              src={hotelData.image || "/images/default-hotel.jpg"}
-              alt={hotelData.name || "Hotel Image"}
+              src="/images/Cashville-Image.svg"
+              alt="Cashville-Image"
               className="w-full md:w-[420px] h-auto object-cover"
             />
             <div className="flex justify-between items-center w-full mt-2">
               <div>
-                <h2 className="text-lg md:text-xl font-medium">
-                  {hotelData.name || "Hotel Name"}
-                </h2>
+                <h2 className="text-lg md:text-xl font-medium">Cashville</h2>
                 <p className="text-sm md:text-base text-secondary">
-                  {hotelData.location || "Unknown Location"}
+                  Kemang, Indonesia
                 </p>
               </div>
               <div>
                 <p className="text-sm md:text-base text-secondary">
-                  <strong className="text-black">${hotelData.price * hotelData.nights || 0} USD</strong> for
-                  <strong className="text-black"> {hotelData.nights || 1} nights</strong>
+                  <strong className="text-black">${totalPrice} USD</strong> for
+                  <strong className="text-black"> {nightsSelected} nights</strong>
                 </p>
               </div>
             </div>
@@ -73,6 +72,7 @@ const HotelBookingPage = () => {
 
           <div className="hidden md:block h-auto w-px bg-secondary"></div>
 
+          {/* Booking Form */}
           <div className="flex flex-col space-y-4">
             <div>
               <label htmlFor="firstName" className="block text-base md:text-lg">
@@ -82,7 +82,7 @@ const HotelBookingPage = () => {
                 type="text"
                 name="firstName"
                 id="firstName"
-                placeholder="Enter your first name"
+                placeholder="Ihsan"
                 className="w-full md:w-[320px] bg-secondary-300 p-4 rounded-md"
               />
             </div>
@@ -94,7 +94,7 @@ const HotelBookingPage = () => {
                 type="text"
                 name="lastName"
                 id="lastName"
-                placeholder="Enter your last name"
+                placeholder="Please type here ..."
                 className="w-full md:w-[320px] bg-secondary-300 p-4 rounded-md"
               />
             </div>
@@ -106,7 +106,7 @@ const HotelBookingPage = () => {
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Enter your email"
+                placeholder="Please type here ..."
                 className="w-full md:w-[320px] bg-secondary-300 p-4 rounded-md"
               />
             </div>
@@ -118,7 +118,7 @@ const HotelBookingPage = () => {
                 type="tel"
                 name="phone"
                 id="phone"
-                placeholder="Enter your phone number"
+                placeholder="Please type here ..."
                 className="w-full md:w-[320px] bg-secondary-300 p-4 rounded-md"
               />
             </div>

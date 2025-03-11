@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import { facilities } from "../constant/features";
 import { useNavigate } from "react-router";
-
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const AboutHotel = ({ hotel }) => {
-    let navigate = useNavigate();
+  let navigate = useNavigate();
   const [nights, setNights] = useState(2);
+  
   const pricePerNight = 280;
   const totalPrice = nights * pricePerNight;
+
+  const [startDate, setStartDate] = useState(null);
+  const [endDate, setEndDate] = useState(null);
+  const [openCalendar, setOpenCalendar] = useState(false);
 
   const increaseNights = () => setNights(nights + 1);
   const decreaseNights = () => {
@@ -69,16 +75,36 @@ const AboutHotel = ({ hotel }) => {
           </div>
 
           {/* Date Selection */}
-          <div className="py-6">
+          <div className="py-6 relative">
             <h4>Pick a Date</h4>
-            <div className="bg-[#F5F6F8] flex h-[52px] items-center">
+            <div
+              className="bg-[#F5F6F8] flex h-[52px] items-center cursor-pointer"
+              onClick={() => setOpenCalendar(!openCalendar)}
+            >
               <div className="bg-primary w-[45px] h-[51.56px] flex items-center justify-center">
-                <img src="/images/ic_calendar.svg" alt="calendar" />
+                <img src="/images/ic_calendar.svg" alt="calendar-icon" />
               </div>
               <div className="flex flex-1 items-center justify-center w-full">
-                20 Jan - 22 Jan
+                {startDate && endDate
+                  ? `${startDate.toLocaleDateString()} - ${endDate.toLocaleDateString()}`
+                  : "Select Date"}
               </div>
             </div>
+            {openCalendar && (
+              <DatePicker
+                selected={startDate}
+                onChange={(dates) => {
+                  const [start, end] = dates;
+                  setStartDate(start);
+                  setEndDate(end);
+                  setOpenCalendar(false);
+                }}
+                startDate={startDate}
+                endDate={endDate}
+                selectsRange
+                inline
+              />
+            )}
             <p className="text-lg leading-[30.6px] text-secondary">
               You will pay <strong className="text-black">${totalPrice} USD</strong> for{" "}
               <strong className="text-black">{nights} nights</strong>
@@ -86,7 +112,10 @@ const AboutHotel = ({ hotel }) => {
           </div>
 
           {/* Booking Button */}
-          <button className="btn !rounded-none w-full"  onClick={() => navigate("/booking", { state: { nights } })}>
+          <button
+            className="btn !rounded-none w-full"
+            onClick={() => navigate("/booking", { state: { nights, startDate, endDate } })}
+          >
             Continue Booking
           </button>
         </div>
