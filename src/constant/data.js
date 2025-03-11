@@ -147,11 +147,11 @@ export const data = [
     id: "S1T2U3",
     name: "Silver Rain",
     location: "Bandung, Indonesia",
-    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837613/Podo_Wae_o7yo21.png",
+    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837616/Silver_Rain_ivdp8o.png",
     images: [
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1741447715/green_park_qf3lvh.png",
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837613/Podo_Wae_o7yo21.png",
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807834/Anggana_nehttt.png"
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837616/Silver_Rain_ivdp8o.png",
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837616/Silver_Rain_ivdp8o.png",
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837616/Silver_Rain_ivdp8o.png"
     ],
     description: "Silver Rain is a luxurious retreat located in the picturesque town of Lembang, Bandung, Indonesia. <br><br> With stunning mountain views, modern amenities, and spacious living areas, this retreat offers the perfect escape for relaxation and rejuvenation. Enjoy cozy bedrooms, a fully equipped kitchen, and a private balcony with breathtaking views. <br><br> Whether you're watching the sunrise, exploring nearby trails, or enjoying a quiet evening indoors, Silver Rain ensures a memorable stay. Book now and experience the magic of Lembang!",
     pricePerNight: 330,
@@ -171,11 +171,12 @@ export const data = [
     id: "V4W5X6",
     name: "Cashville Bliss",
     location: "Kemang, Indonesia",
-    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837613/Podo_Wae_o7yo21.png",
+    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837613/Cashville_g00nxv.png",
     images: [
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1741447715/green_park_qf3lvh.png",
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837613/Podo_Wae_o7yo21.png",
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807834/Anggana_nehttt.png"
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837613/Cashville_g00nxv.png",
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837613/Cashville_g00nxv.png",
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837613/Cashville_g00nxv.png",
+     
     ],
     description: "Cashville Bliss is a luxurious retreat located in the vibrant neighborhood of Kemang, Indonesia. <br><br> With stunning city views, modern amenities, and spacious living areas, this retreat offers the perfect escape for relaxation and rejuvenation. Enjoy cozy bedrooms, a fully equipped kitchen, and a private pool. <br><br> Whether you're exploring the city, relaxing by the pool, or enjoying a quiet evening indoors, Cashville Bliss ensures a memorable stay. Book now and experience the magic of Kemang!",
     pricePerNight: 400,
@@ -195,11 +196,11 @@ export const data = [
     id: "Y7Z8A9",
     name: "PS Wood",
     location: "Depok, Indonesia",
-    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837613/Podo_Wae_o7yo21.png",
+    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1737841096/PS_Wood_ol5kdg.png",
     images: [
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1741447715/green_park_qf3lvh.png",
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837613/Podo_Wae_o7yo21.png",
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807834/Anggana_nehttt.png"
+     "https://res.cloudinary.com/daarrcw3q/image/upload/v1737841096/PS_Wood_ol5kdg.png",
+     "https://res.cloudinary.com/daarrcw3q/image/upload/v1737841096/PS_Wood_ol5kdg.png",
+     "https://res.cloudinary.com/daarrcw3q/image/upload/v1737841096/PS_Wood_ol5kdg.png",
     ],
     description: "PS Wood is a stunning retreat located in the serene city of Depok, Indonesia. <br><br> With breathtaking views, modern amenities, and spacious living areas, this retreat offers the perfect escape for relaxation and rejuvenation. Enjoy cozy bedrooms, a fully equipped kitchen, and a private garden. <br><br> Whether you're exploring the city, relaxing in the garden, or enjoying a quiet evening indoors, PS Wood ensures a memorable stay. Book now and experience the beauty of Depok!",
     pricePerNight: 380,
@@ -219,11 +220,11 @@ export const data = [
     id: "B1C2D3",
     name: "One Five",
     location: "Jakarta, Indonesia",
-    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837613/Podo_Wae_o7yo21.png",
+    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1737841096/One_Five_ahski5.png",
     images: [
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1741447715/green_park_qf3lvh.png",
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837613/Podo_Wae_o7yo21.png",
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807834/Anggana_nehttt.png"
+     "https://res.cloudinary.com/daarrcw3q/image/upload/v1737841096/One_Five_ahski5.png",
+     "https://res.cloudinary.com/daarrcw3q/image/upload/v1737841096/One_Five_ahski5.png",
+     "https://res.cloudinary.com/daarrcw3q/image/upload/v1737841096/One_Five_ahski5.png",
     ],
     description: "One Five is a luxurious retreat located in the bustling city of Jakarta, Indonesia. <br><br> With stunning city views, modern amenities, and spacious living areas, this retreat offers the perfect escape for relaxation and rejuvenation. Enjoy cozy bedrooms, a fully equipped kitchen, and a private balcony. <br><br> Whether you're exploring the city, relaxing on the balcony, or enjoying a quiet evening indoors, One Five ensures a memorable stay. Book now and experience the magic of Jakarta!",
     pricePerNight: 270,
@@ -243,11 +244,11 @@ export const data = [
     id: "E4F5G6",
     name: "Minimal",
     location: "Bogor, Indonesia",
-    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837613/Podo_Wae_o7yo21.png",
+    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1737841094/Minimal_appued.png",
     images: [
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1741447715/green_park_qf3lvh.png",
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837613/Podo_Wae_o7yo21.png",
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807834/Anggana_nehttt.png"
+             "https://res.cloudinary.com/daarrcw3q/image/upload/v1737841094/Minimal_appued.png",
+             "https://res.cloudinary.com/daarrcw3q/image/upload/v1737841094/Minimal_appued.png",
+             "https://res.cloudinary.com/daarrcw3q/image/upload/v1737841094/Minimal_appued.png",
     ],
     description: "Minimal is a serene retreat located in the scenic city of Bogor, Indonesia. <br><br> With stunning river views, modern amenities, and spacious living areas, this retreat offers the perfect escape for relaxation and rejuvenation. Enjoy cozy bedrooms, a fully equipped kitchen, and a private garden. <br><br> Whether you're exploring the river, relaxing in the garden, or enjoying a quiet evening indoors, Minimal ensures a memorable stay. Book now and experience the beauty of Bogor!",
     pricePerNight: 290,
@@ -267,11 +268,11 @@ export const data = [
     id: "H7I8J9",
     name: "Stays Home",
     location: "Wonosobo, Indonesia",
-    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837613/Podo_Wae_o7yo21.png",
+    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1737841095/Stays_Home_lrdx2s.png",
     images: [
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1741447715/green_park_qf3lvh.png",
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737837613/Podo_Wae_o7yo21.png",
-      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737807834/Anggana_nehttt.png"
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737841095/Stays_Home_lrdx2s.png", 
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737841095/Stays_Home_lrdx2s.png", 
+      "https://res.cloudinary.com/daarrcw3q/image/upload/v1737841095/Stays_Home_lrdx2s.png", 
     ],
     description: "Minimal is a serene retreat located in the scenic city of Bogor, Indonesia. <br><br> With stunning river views, modern amenities, and spacious living areas, this retreat offers the perfect escape for relaxation and rejuvenation. Enjoy cozy bedrooms, a fully equipped kitchen, and a private garden. <br><br> Whether you're exploring the river, relaxing in the garden, or enjoying a quiet evening indoors, Minimal ensures a memorable stay. Book now and experience the beauty of Bogor!",
     pricePerNight: 290,
@@ -291,24 +292,24 @@ export const data = [
     id: "K1L2M3",
     name: "Green Park",
     location: "Bandung, Indonesia",
-    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1741447715/green_park_qf3lvh.png",
+    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1741692147/tobby_xiewac.png",
   },
   {
     id: "N4O5P6",
     name: "Green Park",
     location: "Bandung, Indonesia",
-    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1741447715/green_park_qf3lvh.png",
+    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1741692146/dog_xogxfv.png",
   },
   {
     id: "Q7R8S9",
     name: "Green Park",
     location: "Bandung, Indonesia",
-    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1741447715/green_park_qf3lvh.png",
+    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1741692146/labour_mtoav2.png",
   },
   {
     id: "T1U2V3",
     name: "Green Park",
     location: "Bandung, Indonesia",
-    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1741447715/green_park_qf3lvh.png",
+    mainImage: "https://res.cloudinary.com/daarrcw3q/image/upload/v1741692146/snorkelling_t7kjqp.png",
   },
 ];
