@@ -1,56 +1,73 @@
-import React from 'react'
-import { useParams } from 'react-router';
-import { data } from '../../constant/data';
-import ListItems from '../../Components/ListItems';
-import AboutHotel from '../../Components/About';
+import React from "react";
+import { useNavigate, useParams } from "react-router";
+import { data } from "../../constant/data";
+import ListItems from "../../Components/ListItems";
+import AboutHotel from "../../Components/About";
+import { HiArrowCircleLeft } from "react-icons/hi";
 
 const HotelDetailPage = () => {
-    const { id } = useParams();
-  const hotel = data.find((hotel) => hotel.id === id); 
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const hotel = data.find((hotel) => hotel.id === id);
 
   const thingToDo = data.slice(12, 16);
   return (
-   <section>
-       <section className="wrapper py-5 px-4 md:px-0">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-    <div>
-      <p className="text-lg leading-[28px] font-light text-secondary">
-        Home / <span className="text-primary">House Details</span>
-      </p>
-    </div>
-    <div>
-      <h1 className="text-[28px] md:text-[42px] leading-[42px] md:leading-[63px] font-semibold text-primary">
-        {hotel.name}
-      </h1>
-      <p className="text-lg leading-[28px] font-light text-secondary">
-       {hotel.location}
-      </p>
-    </div>
-  </div>
-</section>
-
-
-<section className="wrapper pt-10 px-4 md:px-0">
-  <div className="flex flex-col lg:flex-row gap-4">
-    <div className="w-full max-w-full lg:max-w-[658px]">
-      {/* Main Image */}
-      <img src={hotel.images[0]} alt={hotel.name} className="w-full h-[500px] rounded-2xl object-cover" />
-    </div>
-    <div className="flex flex-col space-y-4">
-      {/* Map through the images  */}
-      {hotel.images.slice(1, 3).map((img, index) => (
-        <div key={index}>
-          <img src={img} alt={`${hotel.name} ${index + 1}`} className="w-full h-[245px] object-cover" />
+    <section>
+      <section className="wrapper py-5 px-4 md:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <p className="text-lg leading-[28px] font-light text-secondary">
+              Home / <span className="text-primary">Hotel Details</span>
+            </p>
+          </div>
+          
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+        <div className="flex flex-col items-center justify-center">
+            <h1 className="text-[28px] md:text-[42px] leading-[42px] md:leading-[63px] font-semibold text-primary">
+              {hotel.name}
+            </h1>
+            <p className="text-lg leading-[28px] font-light text-secondary">
+              {hotel.location}
+            </p>
+          </div>
+      </section>
+    
 
+      <section className="wrapper px-4 md:px-0">
+        <button
+          className="flex items-center gap-2 p-4 text-primary Pb-4"
+          onClick={() => navigate(-1)}
+        >
+          <HiArrowCircleLeft fontSize={20} />
+          Back
+        </button>
 
+        <div className="flex flex-col lg:flex-row gap-4 w-full">
+          <div className="w-full max-w-full lg:max-w-[658px]">
+            {/* Main Image */}
+            <img
+              src={hotel.images[0]}
+              alt={hotel.name}
+              className="w-full h-[500px] rounded-2xl object-cover"
+            />
+          </div>
+          <div className="flex flex-col space-y-4">
+            {/* Map through the images  */}
+            {hotel.images.slice(1, 3).map((img, index) => (
+              <div key={index}>
+                <img
+                  src={img}
+                  alt={`${hotel.name} ${index + 1}`}
+                  className="w-full h-[245px] object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-  {/* Abou the hotel section */}
-{/* <section className="wrapper px-4 md:px-0">
+      {/* Abou the hotel section */}
+      {/* <section className="wrapper px-4 md:px-0">
   <h4 className="text-lg md:text-2xl font-medium text-primary">Decsription</h4>
   <div className="flex flex-col lg:flex-row gap-4 pt-4">
     <div className="w-full max-w-full lg:max-w-[658px] pr-0 lg:pr-8">
@@ -128,22 +145,21 @@ const HotelDetailPage = () => {
     </div>
   </div>
 </section> */}
-<AboutHotel hotel={hotel}/>
+      <AboutHotel hotel={hotel} />
 
+      {/* Things To Do Section */}
+      <section className="wrapper py-10 px-4 md:px-0">
+        <h1 className="text-lg md:text-2xl font-medium text-primary mb-6">
+          Things to do
+        </h1>
+        <div className="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+          {thingToDo.map((data) => (
+            <ListItems key={data.id} {...data} />
+          ))}
+        </div>
+      </section>
+    </section>
+  );
+};
 
-
- {/* Things To Do Section */}
- <section className="wrapper py-10 px-4 md:px-0">
- <h1 className="text-lg md:text-2xl font-medium text-primary mb-6">Things to do</h1>
- <div className="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
-                          {thingToDo.map((data) => (
-                              <ListItems key={data.id} {...data} />
-                          ))}
-                      </div>
- </section>
-                      
-   </section>
-  )
-}
-
-export default HotelDetailPage
+export default HotelDetailPage;
